@@ -1,11 +1,12 @@
-LinkedList
-==========
+/*
+  Example.js
 
-Javascript Linked list
+  Copyright (c) 2014 idkay0
 
-Example
------
-```JS
+  Released under the MIT license
+  http://opensource.org/licenses/MIT
+*/
+
 var LinkedList = require('./LinkedList');
 
 var data = {no:1, name:'idkay1'};
@@ -36,4 +37,3 @@ list.eachNode(function(node){
     console.log('No. '+list.pop(node).value.no+' poped');
   }
 });
-```
