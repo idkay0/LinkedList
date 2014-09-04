@@ -35,13 +35,16 @@ list.eachNode(function(node){
    console.log('No. '+list.pop(node).value.no+' poped');
 });
 ```
-Output
->No. 0 poped
->No. 4 poped
->{ no: 1, name: 'idkay1' }
->{ no: 2, name: 'idkay2' }
->{ no: 3, name: 'idkay3' }
->---
->No. 1 poped
->No. 2 poped
->No. 3 poped
+Reslut
+
+>No. 0 poped   
+>No. 4 poped   
+>{ no: 1, name: 'idkay1' }   
+>{ no: 2, name: 'idkay2' }   
+>{ no: 3, name: 'idkay3' }   
+
+>---  
+
+>No. 1 poped   
+>No. 2 poped   
+>No. 3 poped   
