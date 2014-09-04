@@ -104,24 +104,22 @@ var LinkedList = function(e){
     this.next = undefined;
   };
 
-  linkedList.eachValue = function(callback){
+  linkedList.asyncEachValue = function(callback){
     var item = this.first();
     while(item != undefined){
       var savedNext = item.next;
       callback(item.value);
       item = savedNext;
     }
-    callback(undefined);
   }
 
-  linkedList.eachNode = function(callback){
+  linkedList.asyncEachNode = function(callback){
     var item = this.first();
     while(item != undefined){
       var savedNext = item.next;
       callback(item);
       item = savedNext;
     }
-    callback(undefined);
   }
 
   linkedList.getNode = function(index, callback){

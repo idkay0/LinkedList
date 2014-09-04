@@ -26,14 +26,12 @@ data.name = 'idkay2';
 console.log('No. '+list.firstPop().value.no+' poped');
 console.log('No. '+list.pop().value.no+' poped');
 
-list.eachValue(function(value){
+list.asyncEachValue(function(value){
   console.log(value);
 });
 
 console.log('---');
 
-list.eachNode(function(node){
-  if(node != undefined){
-    console.log('No. '+list.pop(node).value.no+' poped');
-  }
+list.asyncEachNode(function(node){
+   console.log('No. '+list.pop(node).value.no+' poped');
 });
